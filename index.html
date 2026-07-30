@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drogaria Santa Rita | Cuidando de você!</title>
+  <meta name="description" content="Drogaria Santa Rita em Jaboticabal. Medicamentos, perfumaria e atendimento especializado para cuidar da sua saúde e bem-estar.">
+  <meta property="og:title" content="Drogaria Santa Rita">
+  <meta property="og:description" content="Cuidando de você! Medicamentos, perfumaria e atenção farmacêutica com os melhores preços.">
+  <meta property="og:image" content="https://drogariasantaritasp.com.br/img/1.jpeg" />
+  <meta property="og:url" content="https://drogariasantaritasp.com.br">
+  <meta property="og:type" content="website">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#00875a',
+              dark: '#006644',
+              light: '#00a86b'
+            },
+            accent: '#0d2c54'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-emerald-50 via-teal-50 to-slate-100 text-slate-800 font-sans antialiased selection:bg-primary selection:text-white">
+
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-3">
+      <div class="backdrop-blur-md bg-white/75 border border-white/40 shadow-lg rounded-2xl px-6 py-3 flex items-center justify-between">
+        <a href="#inicio" class="flex items-center gap-3 group">
+          <img src="img/1.png" alt="Drogaria Santa Rita Logo" class="h-10 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.style.display='none'">
+          <span class="text-xl sm:text-2xl font-black text-primary tracking-tight">Drogaria <span class="text-accent">Santa Rita</span></span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8 font-medium text-slate-700">
+          <a href="#inicio" class="hover:text-primary transition-colors">Início</a>
+          <a href="#sobre" class="hover:text-primary transition-colors">Sobre Nós</a>
+          <a href="#servicos" class="hover:text-primary transition-colors">Serviços</a>
+          <a href="#galeria" class="hover:text-primary transition-colors">Galeria</a>
+          <a href="#contato" class="hover:text-primary transition-colors">Contato</a>
+        </nav>
+
+        <div class="hidden md:flex items-center">
+          <a href="https://wa.me/5516996338491" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-5 py-2.5 rounded-xl shadow-md shadow-emerald-600/20 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            <span>Peça pelo WhatsApp</span>
+          </a>
+        </div>
+
+        <button id="menu-btn" aria-label="Abrir menu" class="md:hidden p-2 text-slate-700 hover:text-primary focus:outline-none">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden mt-2 backdrop-blur-xl bg-white/90 border border-white/50 rounded-2xl p-6 shadow-xl flex flex-col gap-4 text-center font-medium">
+        <a href="#inicio" class="mobile-link text-slate-700 hover:text-primary py-2 border-b border-slate-100">Início</a>
+        <a href="#sobre" class="mobile-link text-slate-700 hover:text-primary py-2 border-b border-slate-100">Sobre Nós</a>
+        <a href="#servicos" class="mobile-link text-slate-700 hover:text-primary py-2 border-b border-slate-100">Serviços</a>
+        <a href="#galeria" class="mobile-link text-slate-700 hover:text-primary py-2 border-b border-slate-100">Galeria</a>
+        <a href="#contato" class="mobile-link text-slate-700 hover:text-primary py-2">Contato</a>
+        <a href="https://wa.me/5516996338491" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-emerald-600 text-white font-semibold py-3 rounded-xl shadow-md mt-2">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.887 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>Peça pelo WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <div class="absolute inset-0 z-0">
+      <img src="img/1.jpeg" alt="Interior da Drogaria Santa Rita" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-slate-900/65 backdrop-blur-[2px]"></div>
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-4 text-center text-white py-20 fade-in-up">
+      <div class="inline-block px-4 py-1.5 rounded-full backdrop-blur-md bg-white/20 border border-white/30 text-emerald-300 font-semibold text-sm mb-6 uppercase tracking-wider">
+        Sua saúde em primeiro lugar
+      </div>
+      <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-6 drop-shadow-md">
+        Drogaria <span class="text-emerald-400">Santa Rita</span>
+      </h1>
+      <p class="text-xl sm:text-3xl font-light text-slate-100 max-w-2xl mx-auto mb-10 drop-shadow">
+        Cuidando de você!
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="https://wa.me/5516996338491" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-xl shadow-emerald-900/40 hover:shadow-2xl hover:scale-105 transition-all duration-300">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>Faça seu Pedido</span>
+        </a>
+        <a href="#sobre" class="w-full sm:w-auto inline-flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white font-semibold text-lg px-8 py-4 rounded-2xl transition-all duration-300">
+          Conheça a Loja
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="py-24 relative z-10 scroll-reveal">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="backdrop-blur-xl bg-white/70 border border-white/60 shadow-2xl rounded-3xl p-8 sm:p-12 md:p-16 text-center">
+        <span class="text-primary font-bold uppercase tracking-wider text-sm mb-2 block">Drogaria Santa Rita</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-8">Sobre Nós</h2>
+        <div class="space-y-6 text-slate-700 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
+          <p>
+            A Drogaria Santa Rita é uma empresa dedicada ao cuidado com a saúde e ao bem-estar da população, oferecendo produtos farmacêuticos, cosméticos e itens de higiene com qualidade e preços acessíveis. A empresa atua no comércio varejista de medicamentos, sempre buscando atender seus clientes com responsabilidade, confiança e compromisso com a saúde.
+          </p>
+          <p>
+            Nosso objetivo é facilitar o acesso da comunidade a produtos essenciais para o dia a dia, garantindo atendimento humanizado e orientado para as necessidades de cada cliente. Trabalhamos com medicamentos, produtos de perfumaria, higiene pessoal e outros itens relacionados ao cuidado e à qualidade de vida.
+          </p>
+          <p>
+            Acreditamos que saúde deve ser acessível a todos. Por isso, buscamos constantemente oferecer um atendimento próximo, preços justos e um ambiente confiável para que nossos clientes encontrem tudo o que precisam em um só lugar.
+          </p>
+          <p class="font-medium text-slate-900">
+            Com seriedade, transparência e dedicação, seguimos trabalhando para ser uma referência em atendimento farmacêutico e conveniência para a comunidade.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="py-24 relative z-10 scroll-reveal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Nossos Serviços</h2>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Tudo o que você e sua família precisam com garantia de procedência e agilidade.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="group backdrop-blur-xl bg-white/60 hover:bg-white/80 border border-white/60 hover:border-emerald-300/80 shadow-xl hover:shadow-2xl rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 text-center">
+          <div class="p-4 rounded-2xl bg-emerald-50 w-20 h-20 mx-auto flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <svg class="w-12 h-12 text-primary-DEFAULT mx-auto mb-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g fill="currentColor"> <path fill="none" d="M0 0H24V24H0z" /> <path d="M19 2v2h-2v3c1.657 0 3 1.343 3 3v11c0 .552-.448 1-1 1H5c-.552 0-1-.448-1-1V10c0-1.657 1.343-3 3-3V4H5V2h14zm-2 7H7c-.552 0-1 .448-1 1v10h12V10c0-.552-.448-1-1-1zm-4 2v2h2v2h-2.001L13 17h-2l-.001-2H9v-2h2v-2h2zm2-7H9v3h6V4z" /> </g> </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3">Medicamentos</h3>
+          <p class="text-slate-600 leading-relaxed">Ampla variedade de medicamentos éticos, genéricos e similares com os melhores preços e programa Farmácia Popular.</p>
+        </div>
+
+        <div class="group backdrop-blur-xl bg-white/60 hover:bg-white/80 border border-white/60 hover:border-emerald-300/80 shadow-xl hover:shadow-2xl rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 text-center">
+          <div class="p-4 rounded-2xl bg-emerald-50 w-20 h-20 mx-auto flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <svg class="w-12 h-12 text-primary-DEFAULT mx-auto mb-4" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 442 442" xml:space="preserve"> <g> <path d="M231.5,50.5c0-5.79-4.71-10.5-10.5-10.5c-5.79,0-10.5,4.71-10.5,10.5S215.21,61,221,61C226.79,61,231.5,56.29,231.5,50.5z" /> <path d="M346,163.682h-60V122c0-5.522-4.478-10-10-10h-10V10c0-5.523-4.478-10-10-10h-70c-5.523,0-10,4.477-10,10v102h-10 c-5.523,0-10,4.478-10,10v41.682H96c-11.028,0-20,8.972-20,20V422c0,11.028,8.972,20,20,20h250c11.028,0,20-8.972,20-20V183.682 C366,172.653,357.028,163.682,346,163.682z M196,20h50v92h-50V20z M96,422V183.682h70c5.523,0,10-4.477,10-10V132h35v71.682h-85 c-5.523,0-10,4.478-10,10V392c0,5.522,4.477,10,10,10h190c5.522,0,10-4.478,10-10v-60.892c0-5.522-4.478-10-10-10s-10,4.478-10,10 V382H136V223.682h75V352c0,5.522,4.477,10,10,10c5.523,0,10-4.478,10-10V223.682h75V297c0,5.522,4.478,10,10,10s10-4.478,10-10 v-83.318c0-5.522-4.478-10-10-10h-85V132h35v41.682c0,5.523,4.478,10,10,10h70L346.002,422H96z" /> </g> </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3">Perfumaria</h3>
+          <p class="text-slate-600 leading-relaxed">Linha completa de cosméticos, produtos para cabelo, higiene pessoal e marcas renomadas para o seu dia a dia.</p>
+        </div>
+
+        <div class="group backdrop-blur-xl bg-white/60 hover:bg-white/80 border border-white/60 hover:border-emerald-300/80 shadow-xl hover:shadow-2xl rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 text-center">
+          <div class="p-4 rounded-2xl bg-emerald-50 w-20 h-20 mx-auto flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <svg class="w-12 h-12 text-primary mx-auto mb-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M19 2C19 2 21 3.2 21 6C21 8.8 19 10 19 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M17 4C17 4 18 4.6 18 6C18 7.4 17 8 17 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M17.9975 18C18 17.8358 18 17.669 18 17.5C18 15.0147 14.4183 13 10 13C5.58172 13 2 15.0147 2 17.5C2 19.9853 2 22 10 22C12.231 22 13.8398 21.8433 15 21.5634" stroke="currentColor" stroke-width="1.em" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3">Atendimento Humanizado</h3>
+          <p class="text-slate-600 leading-relaxed">Equipe atenciosa, qualificada e pronta para oferecer orientação precisa e tiragem de dúvidas farmacêuticas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="py-24 relative z-10 scroll-reveal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Nossa Loja</h2>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Conheça nossa estrutura moderna, limpa e preparada para melhor te receber.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="overflow-hidden rounded-3xl backdrop-blur-md bg-white/40 border border-white/60 p-3 shadow-lg group">
+          <img src="img/2.jpeg" alt="Fachada Drogaria Santa Rita" class="w-full h-64 object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="overflow-hidden rounded-3xl backdrop-blur-md bg-white/40 border border-white/60 p-3 shadow-lg group">
+          <img src="img/3.jpeg" alt="Interior Seção Infantil e Suplementos" class="w-full h-64 object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="overflow-hidden rounded-3xl backdrop-blur-md bg-white/40 border border-white/60 p-3 shadow-lg group">
+          <img src="img/4.jpeg" alt="Seção Perfumaria" class="w-full h-64 object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="overflow-hidden rounded-3xl backdrop-blur-md bg-white/40 border border-white/60 p-3 shadow-lg group">
+          <img src="img/5.jpeg" alt="Seção de Medicamentos" class="w-full h-64 object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="overflow-hidden rounded-3xl backdrop-blur-md bg-white/40 border border-white/60 p-3 shadow-lg group">
+          <img src="img/6.jpeg" alt="Balcão de Atendimento" class="w-full h-64 object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="overflow-hidden rounded-3xl backdrop-blur-md bg-white/40 border border-white/60 p-3 shadow-lg group">
+          <img src="img/7.jpeg" alt="Prateleiras Perfumaria" class="w-full h-64 object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="py-24 relative z-10 scroll-reveal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="backdrop-blur-xl bg-white/70 border border-white/60 shadow-2xl rounded-3xl p-6 sm:p-10 md:p-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+          
+          <div class="flex flex-col justify-between space-y-8">
+            <div>
+              <h2 class="text-3xl font-extrabold text-slate-900 mb-6">Informações de Contato</h2>
+              <div class="space-y-4 text-slate-700">
+                <div class="p-4 rounded-2xl bg-white/50 border border-white/80">
+                  <p class="text-xs uppercase font-bold text-primary tracking-wider mb-1">CNPJ</p>
+                  <p class="font-semibold text-slate-900">04.602.875/0001-14</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-white/50 border border-white/80">
+                  <p class="text-xs uppercase font-bold text-primary tracking-wider mb-1">Razão Social</p>
+                  <p class="font-semibold text-slate-900">ROBERTO APARECIDO CHIODA</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-white/50 border border-white/80">
+                  <p class="text-xs uppercase font-bold text-primary tracking-wider mb-1">Endereço</p>
+                  <p class="font-semibold text-slate-900">RUA SÃO JOÃO, 3190</p>
+                  <p class="text-slate-600">JARDIM BOA VISTA - JABOTICABAL / SP</p>
+                  <p class="text-slate-600">CEP: 14.870-240</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-white/50 border border-white/80">
+                  <p class="text-xs uppercase font-bold text-primary tracking-wider mb-1">E-mail</p>
+                  <a href="mailto:drogariasantarita@gmail.com" class="font-semibold text-primary hover:underline">drogariasantarita@gmail.com</a>
+                </div>
+                <div class="p-4 rounded-2xl bg-white/50 border border-white/80">
+                  <p class="text-xs uppercase font-bold text-primary tracking-wider mb-1">Telefones</p>
+                  <div class="flex flex-wrap gap-3 font-semibold text-slate-900 mt-1">
+                    <a href="tel:1632038491" class="hover:text-primary">(16) 3203-8491</a>
+                    <span>•</span>
+                    <a href="tel:1632042941" class="hover:text-primary">(16) 3204-2941</a>
+                    <span>•</span>
+                    <a href="tel:16996338491" class="hover:text-primary">(16) 99633-8491</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full h-[500px] lg:h-auto min-h-[400px] rounded-2xl overflow-hidden shadow-inner border border-slate-200">
+            <iframe 
+              title="Mapa de Localização Drogaria Santa Rita"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.8983804862594!2d-48.330839!3d-21.255675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b90cb4fa80b335%3A0x6b7ca3c3fa3ddc01!2sR.%20S%C3%A3o%20Jo%C3%A3o%2C%203190%20-%20Jardim%20Boa%20Vista%2C%20Jaboticabal%20-%20SP%2C%2014870-240!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr" 
+              class="w-full h-full border-0" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-8 bg-slate-900 text-slate-400 text-sm border-t border-slate-800 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 text-center space-y-3">
+      <p>CNPJ: 04.602.875/0001-14 - ROBERTO APARECIDO CHIODA (Drogaria Santa Rita)</p>
+      <p>© 2026 Drogaria Santa Rita. Todos os direitos reservados.</p>
+      <p>
+        <button id="open-privacy" class="text-slate-300 hover:text-emerald-400 underline transition-colors focus:outline-none">
+          Política de Privacidade
+        </button>
+      </p>
+    </div>
+  </footer>
+
+  <div id="privacy-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md hidden transition-opacity duration-300 opacity-0">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[85vh] overflow-y-auto">
+      <button id="close-privacy" class="absolute top-6 right-6 text-slate-400 hover:text-slate-700 text-2xl font-bold focus:outline-none">&times;</button>
+      <h3 class="text-2xl font-bold text-slate-900 mb-4">Política de Privacidade</h3>
+      <div class="space-y-4 text-slate-600 text-sm leading-relaxed">
+        <p>A Drogaria Santa Rita valoriza a privacidade de seus visitantes. Este site institucional tem caráter puramente informativo e não realiza a coleta automatizada de dados pessoais de navegação nem faz uso de cookies de rastreamento.</p>
+        <p>Caso entre em contato conosco via e-mail ou WhatsApp, as informações fornecidas serão utilizadas exclusivamente para responder às suas solicitações e prestar o atendimento desejado, não sendo compartilhadas com terceiros em nenhuma hipótese.</p>
+        <p>Garantimos a conformidade com as diretrizes da Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018).</p>
+      </div>
+      <div class="mt-8 text-right">
+        <button id="close-privacy-btn" class="bg-primary text-white font-semibold px-6 py-2.5 rounded-xl hover:bg-primary-dark transition-colors">
+          Entendi
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
